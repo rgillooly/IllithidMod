@@ -1,0 +1,20 @@
+<Defs>
+<GeneDef>
+<defName>BrainEater</defName>
+<label>Brain Eater</label>
+<description>Carriers of this gene need to eat brains.</description>
+<geneClass>Gene_PsychicEnergy</geneClass>
+<iconPath>BrainJar</iconPath>
+<selectionWeight>0</selectionWeight>
+<displayCategory>Illithid</displayCategory>
+<displayOrderInCategory>-2</displayOrderInCategory>
+<customEffectDescriptions>
+<li>Gives Psychic Energy Supply.</li>
+</customEffectDescriptions>
+<minAgeActive>0</minAgeActive>
+<resourceLossPerDay>0.02</resourceLossPerDay>
+<biostatCpx>1</biostatCpx>
+<biostatMet>1</biostatMet>
+<causesNeed>BrainConsumption</causesNeed>
+</GeneDef>
+</Defs>

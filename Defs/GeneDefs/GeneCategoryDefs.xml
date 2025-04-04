@@ -1,0 +1,8 @@
+<Defs>
+  <GeneCategoryDef>
+    <defName>Illithid</defName>
+    <label>Illithid</label>
+    <displayPriorityInXenotype>12</displayPriorityInXenotype>
+<displayPriorityInGenepack>12</displayPriorityInGenepack>
+  </GeneCategoryDef>
+</Defs>

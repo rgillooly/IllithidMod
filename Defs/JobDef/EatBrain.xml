@@ -1,0 +1,8 @@
+<Defs>
+    <JobDef>
+        <defName>EatBrain</defName>
+        <driverClass>JobDriver_Ingest</driverClass>
+        <reportString>eating a brain.</reportString>
+        <playerInterruptible>true</playerInterruptible>
+    </JobDef>
+</Defs>

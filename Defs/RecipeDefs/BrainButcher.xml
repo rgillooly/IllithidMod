@@ -1,0 +1,47 @@
+<Defs>
+<RecipeDef>
+    <defName>ButcherForBrain</defName>
+    <label>Extract Brain</label>
+    <workerCounterClass>RecipeWorkerCounter_ButcherAnimals</workerCounterClass>
+    <workAmount>450</workAmount>
+    <forceHiddenSpecialFilters>
+<li>AllowFresh</li>
+</forceHiddenSpecialFilters>
+<ingredients>
+<li>
+<filter>
+<categories>
+<li>Corpses</li>
+</categories>
+</filter>
+<count>1</count>
+</li>
+</ingredients>
+<specialProducts>
+<li>Butchery</li>
+</specialProducts>
+<fixedIngredientFilter>
+<categories>
+<li>Corpses</li>
+</categories>
+<disallowedCategories>
+<li>CorpsesMechanoid</li>
+</disallowedCategories>
+<specialFiltersToDisallow>
+<li>AllowRotten</li>
+</specialFiltersToDisallow>
+<disallowDoesntProduceMeat>true</disallowDoesntProduceMeat>
+</fixedIngredientFilter>
+<defaultIngredientFilter>
+<categories>
+<li>CorpsesAnimal</li>
+</categories>
+</defaultIngredientFilter>
+    <products>
+            <BrainIngestible>1</BrainIngestible>
+    </products>
+    <skillRequirements>
+<Cooking>3</Cooking>
+    </skillRequirements>
+</RecipeDef>
+</Defs>

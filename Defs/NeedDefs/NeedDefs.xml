@@ -1,0 +1,13 @@
+<Defs>
+    <NeedDef ParentName="DrugAddictionNeedBase">
+        <defName>BrainConsumption</defName>
+        <needClass>Need_BrainConsumption</needClass>
+        <label>Psychic Energy</label>
+        <description>This need means users need to consume intelligent brains to sustain themselves.</description>
+        <listPriority>1</listPriority>
+        <fallPerDay>0.032</fallPerDay>
+        <showOnNeedList>true</showOnNeedList> 
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <colonistsOnly>false</colonistsOnly>  <!-- Ensure it applies to all pawns -->
+    </NeedDef>
+</Defs>

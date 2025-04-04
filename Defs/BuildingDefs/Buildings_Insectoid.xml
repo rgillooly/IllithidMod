@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BuildingBase" Name="Illithid_WallBase" Abstract="true">
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<statBases>
+			<MeditationFocusStrength>0.22</MeditationFocusStrength>
+		</statBases>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<coversFloor>true</coversFloor>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<holdsRoof>true</holdsRoof>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<fertility>0</fertility>
+		<designationCategory>VFEI2_Insectoids</designationCategory>
+		<building>
+			<paintable>false</paintable>
+			<isInert>true</isInert>
+			<isPlaceOverableWall>true</isPlaceOverableWall>
+			<ai_chillDestination>false</ai_chillDestination>
+			<supportsWallAttachments>true</supportsWallAttachments>
+			<claimable>false</claimable>
+		</building>
+		<comps>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Minimal</li>
+				</focusTypes>
+			</li>
+		</comps>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>2</multiplier>
+			</li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>2</multiplier>
+			</li>
+		</damageMultipliers>
+	</ThingDef>
+	<ThingDef ParentName="IllithidWallBase">
+		<defName>illithidwallred</defName>
+		<label>Illithid Wall Red</label>
+		<description>An impassable wall made from Illithoid flesh. Capable of holding up a roof.</description>
+		<graphicData>
+			<texPath>IllithidWall_Red</texPath>
+		</graphicData>
+		<uiIconPath>IllithidWall_Red</uiIconPath>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<building>
+			<blueprintGraphicData>
+				<texPath>IllithidWall_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+		</building>
+		<uiOrder>2000</uiOrder>
+		<comps>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="IllithidWallBase">
+		<defName>illithidwallpurple</defName>
+		<label>Illithid Wall Purple</label>
+		<description>An impassable wall made from Illithoid flesh. Capable of holding up a roof.</description>
+		<graphicData>
+			<texPath>IllithidWall_Purple</texPath>
+		</graphicData>
+		<uiIconPath>IllithidWall_Purple</uiIconPath>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<building>
+			<blueprintGraphicData>
+				<texPath>IllithidWall_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+		</building>
+		<uiOrder>2000</uiOrder>
+		<comps>
+		</comps>
+	</ThingDef>
+<ThingDef ParentName="IllithidWallBase" Name="IllithidDoor" Abstract="True">
+<thingClass>Building_Door</thingClass>
+<altitudeLayer>DoorMoveable</altitudeLayer>
+<fillPercent>1</fillPercent>
+<useHitPoints>true</useHitPoints>
+<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+<selectable>true</selectable>
+<tickerType>Normal</tickerType>
+<rotatable>false</rotatable>
+<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+<uiOrder>0</uiOrder>
+<holdsRoof>true</holdsRoof>
+<staticSunShadowHeight>1.0</staticSunShadowHeight>
+<blockLight>true</blockLight>
+<drawerType>RealtimeOnly</drawerType>
+<building>
+<isInert>true</isInert>
+<canPlaceOverWall>true</canPlaceOverWall>
+<soundDoorOpenPowered>Door_OpenPowered</soundDoorOpenPowered>
+<soundDoorClosePowered>Door_ClosePowered</soundDoorClosePowered>
+<soundDoorOpenManual>Door_OpenManual</soundDoorOpenManual>
+<soundDoorCloseManual>Door_CloseManual</soundDoorCloseManual>
+<blueprintClass>Blueprint_Door</blueprintClass>
+<blueprintGraphicData>
+<texPath>Things/Building/Door/Door_Blueprint</texPath>
+</blueprintGraphicData>
+<ai_chillDestination>false</ai_chillDestination>
+</building>
+<comps>
+<li Class="CompProperties_Forbiddable">
+<allowNonPlayer>true</allowNonPlayer>
+</li>
+</comps>
+<placeWorkers>
+<li>PlaceWorker_DoorLearnOpeningSpeed</li>
+</placeWorkers>
+<stealable>false</stealable>
+</ThingDef>
+<ThingDef ParentName="VFEI2_BuildingBaseDoor">
+<defName>illithiddoor</defName>
+<label>Illithid Door</label>
+<thingClass>Building_MultiTileDoor</thingClass>
+<description>A passable door made from illithoid flesh.</description>
+<statBases>
+<WorkToBuild>2000</WorkToBuild>
+<MaxHitPoints>60</MaxHitPoints>
+<Beauty>0</Beauty>
+<Flammability>1</Flammability>
+</statBases>
+<graphicData>
+<texPath>DoorIllithid_Mover</texPath>
+<graphicClass>Graphic_Single</graphicClass>
+<damageData>
+<enabled>false</enabled>
+</damageData>
+</graphicData>
+<uiIconPath>IllithidDoor_Red_Menu</uiIconPath>
+<size>(1, 1)</size>
+<rotatable>true</rotatable>
+<building>
+<roamerCanOpen>true</roamerCanOpen>
+<blueprintClass>Blueprint_Build</blueprintClass>
+<blueprintGraphicData>
+<texPath>IllithidDoor_Red_Menu</texPath>
+<graphicClass>Graphic_Multi</graphicClass>
+<shaderType>EdgeDetect</shaderType>
+<drawSize>2</drawSize>
+</blueprintGraphicData>
+<doorTopGraphic>
+<texPath>IllithidDoor_Red_south</texPath>
+<graphicClass>Graphic_Multi</graphicClass>
+<drawSize>(2, 2)</drawSize>
+</doorTopGraphic>
+</building>
+<designationHotKey>Misc3</designationHotKey>
+</ThingDef>
+</Defs>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Illthids</name>
+  <author>Needler98</author>
+  <supportedVersions>
+	  	<li>1.5</li>
+  </supportedVersions>
+  <packageId>Needler98.Illithids</packageId>
+  <description>Placeholder.
+  </description>
+  <modIconPath IgnoreIfNoMatchingField="True"></modIconPath>
+
+  <modDependencies>
+	</modDependencies>
+
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+	</loadAfter>
+
+</ModMetaData>

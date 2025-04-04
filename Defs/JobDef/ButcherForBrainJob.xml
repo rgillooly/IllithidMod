@@ -1,0 +1,8 @@
+<Defs>
+    <JobDef>
+        <defName>ButcherForBrainJob</defName>
+        <driverClass>JobDriver_DoBill</driverClass>
+        <reportString>butchering a brain.</reportString>
+        <playerInterruptible>true</playerInterruptible>
+    </JobDef>
+</Defs>

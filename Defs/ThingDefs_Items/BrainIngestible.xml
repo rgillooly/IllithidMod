@@ -1,0 +1,32 @@
+<Defs>
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>BrainIngestible</defName>
+    <label>Brain</label>
+    <description>Human Brain, squishy and nourishing for the mind.</description>
+    <graphicData>
+      <texPath>BrainJar</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MarketValue>70</MarketValue>
+      <Mass>0.01</Mass>
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+    <techLevel>Ultra</techLevel>
+    <minRewardCount>10</minRewardCount>
+    <ingestible>
+      <foodType>AnimalProduct</foodType>
+      <preferability>DesperateOnly</preferability>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+      <ingestSound>HemogenPack_Consume</ingestSound>
+    </ingestible>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>
+    <allowedArchonexusCount>50</allowedArchonexusCount>
+  </ThingDef>
+</Defs>

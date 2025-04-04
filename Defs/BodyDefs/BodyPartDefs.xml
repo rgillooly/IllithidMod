@@ -1,0 +1,11 @@
+<Defs>
+<ThingDef ParentName="BodyPartNaturalBase">
+<defName>Brain</defName>
+<label>brain</label>
+<description>A human brain. The center of all thought and knowledge.</description>
+<statBases>
+<MarketValue>1000</MarketValue>
+<Mass>1</Mass>
+</statBases>
+</ThingDef>
+</Defs>

@@ -1,0 +1,45 @@
+<Defs>
+    <RecipeDef ParentName="SurgeryFlesh">
+        <defName>ExtractBrain</defName>
+        <label>Extract Brain</label>
+        <description>Removes the brain, instantly killing the pawn.</description>
+        <uiIconPath>UI/Icons/Stuff/Medicine</uiIconPath>
+        <appliedOnFixedBodyParts>
+            <li>Brain</li>
+        </appliedOnFixedBodyParts>
+
+        <products>
+                <BrainIngestible>1</BrainIngestible>
+        </products>
+
+        <workerClass>Recipe_RemoveBrain</workerClass>
+        <jobString>Extracting brain.</jobString>
+        <workAmount>2000</workAmount>
+        <surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>
+
+        <addsHediff>MissingBrain</addsHediff> <!-- Ensures instant death -->
+
+        <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+        </fixedIngredientFilter>
+
+        <recipeUsers>
+            <li>Human</li> <!-- Ensures only humanlike pawns can have their brain removed -->
+        </recipeUsers>
+    </RecipeDef>
+</Defs>

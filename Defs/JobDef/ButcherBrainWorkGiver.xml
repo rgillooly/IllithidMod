@@ -1,0 +1,13 @@
+<Defs>
+<WorkGiverDef>
+    <defName>ButcherForBrainWorkGiver</defName>
+    <giverClass>WorkGiver_ButcherBrain</giverClass>
+    <workType>Cooking</workType>
+    <priorityInType>50</priorityInType>
+    <fixedBillGiverDefs>
+        <li>BrainExtractor</li>
+    </fixedBillGiverDefs>
+    <verb>butchering for brain</verb>
+    <gerund>brain butchering</gerund>
+</WorkGiverDef>
+</Defs>

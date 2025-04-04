@@ -1,0 +1,16 @@
+<Defs>
+<HediffDef>
+    <defName>MissingBrain</defName>
+    <label>Brain Removed</label>
+    <description>The brain is missing. This person is dead.</description>
+    <hediffClass>Hediff_MissingPart</hediffClass>
+    <isBad>true</isBad>
+    <stages>
+        <li>
+            <label>Dead</label>
+            <lifeThreatening>true</lifeThreatening>
+            <deathMtbDays>0.001</deathMtbDays>  <!-- Pawn dies instantly -->
+        </li>
+    </stages>
+</HediffDef>
+</Defs>
