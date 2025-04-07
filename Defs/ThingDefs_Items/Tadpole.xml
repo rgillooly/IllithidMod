@@ -1,0 +1,25 @@
+<Defs>
+<ThingDef ParentName="MedicineIndustrial">
+  <defName>tadpole</defName>
+  <label>Tadpole</label>
+  <description>This serum alters a pawn's xenogenes to an Illithid.</description>
+  <graphicData>
+    <texPath>Things/Item/XenoSerum</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <statBases>
+    <Mass>0.2</Mass>
+    <MarketValue>500</MarketValue>
+  </statBases>
+  <ingestible>
+    <ingestCommandString>Inject serum</ingestCommandString>
+    <ingestEffect>EatMeat</ingestEffect>
+    <ingestSound>Ingest</ingestSound>
+    <outcomeDoers>
+      <li Class="IngestionOutcomeDoer_GiveHediff">
+        <hediffDef>XenoConversionEffect</hediffDef>
+      </li>
+    </outcomeDoers>
+  </ingestible>
+</ThingDef>
+</Defs>

@@ -1,0 +1,24 @@
+<Defs>
+<ThingDef ParentName="BuildingBase">
+  <defName>tadpolepool</defName>
+  <label>Tadpole Pool</label>
+  <description>A fleshy pool that can spawn tadpoles for making illithids.</description>
+  <thingClass>Building_WorkTable</thingClass>
+  <graphicData>
+    <texPath>Things/Building/XenoBench</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <costList>
+    <Steel>200</Steel>
+    <ComponentIndustrial>4</ComponentIndustrial>
+  </costList>
+  <building>
+    <workSpeedFactor>1.0</workSpeedFactor>
+  </building>
+  <size>(2,2)</size>
+  <useHitPoints>true</useHitPoints>
+  <tradeTags>
+    <li>Bench</li>
+  </tradeTags>
+</ThingDef>
+</Defs>

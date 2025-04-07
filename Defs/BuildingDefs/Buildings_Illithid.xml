@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="BuildingBase" Name="Illithid_WallBase" Abstract="true">
+	<ThingDef ParentName="BuildingBase" Name="IllithidWallBase" Abstract="true">
 		<thingClass>Building</thingClass>
 		<category>Building</category>
 		<statBases>
@@ -41,7 +41,7 @@
 		<blockLight>true</blockLight>
 		<canOverlapZones>false</canOverlapZones>
 		<fertility>0</fertility>
-		<designationCategory>VFEI2_Insectoids</designationCategory>
+		<designationCategory>Structure</designationCategory>
 		<building>
 			<paintable>false</paintable>
 			<isInert>true</isInert>
@@ -152,7 +152,7 @@
 </placeWorkers>
 <stealable>false</stealable>
 </ThingDef>
-<ThingDef ParentName="VFEI2_BuildingBaseDoor">
+<ThingDef ParentName="IllithidDoor">
 <defName>illithiddoor</defName>
 <label>Illithid Door</label>
 <thingClass>Building_MultiTileDoor</thingClass>
